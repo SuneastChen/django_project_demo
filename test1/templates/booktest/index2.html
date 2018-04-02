@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书列表</title>
+</head>
+<body>
+{% for book in books_list %}
+    {% print book %}
+    {{ forloop.counter }}
+    <li><a href="/aaa/{{ book.id }}/">{{ book.title }}</a></li>
+
+{% endfor %}
+
+</body>
+</html>
